@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: 2px solid black;
+        display: grid;
+        height: 700px;
+        width: 100%;
+        background-color: rgb(136, 6, 6);
+        row-gap: 10px;
+        column-gap: 10px;
+      }
+
+      .containar {
+        background-color: blue;
+        color: white;
+        font-size: 50px;
+      }
+      #Aside {
+        background-color: grey;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-image: url(https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+        background-size: cover;
+        color: black;
+      }
+
+      #Header {
+        background-color: green;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-image: url(https://plus.unsplash.com/premium_photo-1675265895649-d1e2214f2c73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+      }
+
+      #Section {
+        background-color: yellow;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-image: url(https://images.unsplash.com/photo-1635846650676-55b9ba247172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80);
+        background-size: cover;
+      }
+
+      #content1 {
+        background-color: rgb(247, 108, 9);
+        background-image: url(https://plus.unsplash.com/premium_photo-1687807264809-e00ed070303f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+        background-size: cover;
+      }
+
+      #content2 {
+        background-color: purple;
+        background-image: url(https://images.unsplash.com/photo-1659948782648-72d1583efcf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+      }
+
+      #content3 {
+        background-color: rgb(87, 223, 123);
+        background-image: url(https://plus.unsplash.com/premium_photo-1674725060459-b4c996000457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+      }
+      #content4 {
+        background-color: rgb(76, 219, 217);
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        background-image: url(https://images.unsplash.com/photo-1641423914214-622b2a8dd3f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80);
+        background-size: cover;
+      }
+
+      #footer {
+        background-color: rgb(6, 84, 84);
+        grid-row-start: 0;
+        grid-row-end: 0;
+        background-image: url(https://images.unsplash.com/photo-1687793772562-43a0f6b4e1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80);
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="containar" id="Aside">Aside</div>
+      <div class="containar" id="Header">Lorem ipsum</div>
+      <div class="containar" id="Section">Lorem ipsum dolor sit</div>
+      <div class="containar" id="content1">Lorem ipsum dolor sit</div>
+      <div class="containar" id="content2">Lorem ipsum dolor sit</div>
+      <div class="containar" id="content3">
+        Lorem ipsum dolor sit distinctio nihil officiis.
+      </div>
+      <div class="containar" id="content4">
+        imilique, impedit omnis sapiente distinctio nihil officiis.
+      </div>
+      <div class="containar" id="footer">officiis.</div>
+    </section>
+  </body>
+</html>
